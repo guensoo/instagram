@@ -6,11 +6,14 @@
   <title>Document</title>
   <style>
     body{
+      display: flex;
       height: 100vh;
       background: rgb(218, 216, 216);
     }
     container{
       border: 1px solid black;
+      align-self: center;
+      margin: 0 auto;
       display: block;
       width: 40em;
       height: 25em;
@@ -26,9 +29,6 @@
       display: block;
       text-align: center;
       margin: 10px;
-    }
-    #id > h2{
-      text-align: left;
     }
     #login{ 
       display: flex;
@@ -53,12 +53,12 @@
   <container>
   <h1>로그인</h1>
 
-  <div>
-  <h2 id="id">아이디</h2>
+  <div id="id">
+  <h2>아이디</h2>
     <input type="text" placeholder="아이디 입력">
   </div>
-  <div>
-  <h2 id="pw">비밀번호</h2>
+  <div id="pw">
+  <h2>비밀번호</h2>
     <input type="password" placeholder="비밀번호 입력">
   </div>
   <div id="login"><a href="#">로그인</a></div>
