@@ -4,8 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    section{display: flex;}
+    div{
+      width: 50px; height: 50px;
+      margin: 10px;
+      color: white;
+      text-align: center;
+    }
+    .a{background: yellowgreen}
+    .b{background: violet;}
+    .c{background: cornflowerblue;}
+    .d{background: orangered;}
+    .e{background: #a39290;}
+    .flex-start{
+      justify-content: flex-start;
+    }
+    .flex-end{
+      justify-content: flex-end;
+    }
+    .flex-center{
+      justify-content: center;
+    }
+    .space-between{
+      justify-content: space-between;
+    }
+    .space-around{
+      justify-content: space-around;
+    }
+  </style>
 </head>
 <body>
-  
+  <h1>justify-content와 align-items</h1>
+  <hr>
+  <p>flex-start</p>
+  <section class="flex-start">
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+    <div class="e">e</div>
+  </section>
+  <p>flex-end</p>
+  <section class="flex-end">
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+    <div class="e">e</div>
+  </section>
+  <p>flex-center</p>
+  <section class="flex-center">
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+    <div class="e">e</div>
+  </section>
+  <p>space-between</p>
+  <section class="space-between">
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+    <div class="e">e</div>
+  </section>
+  <p>space-around</p>
+  <section class="space-around">
+    <div class="a">a</div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+    <div class="d">d</div>
+    <div class="e">e</div>
+  </section>
 </body>
 </html>
