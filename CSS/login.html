@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      height: 100vh;
+      background: rgb(218, 216, 216);
+    }
+    container{
+      border: 1px solid black;
+      display: block;
+      width: 40em;
+      height: 25em;
+      margin-top: 100px;
+      background: white;
+      border-radius: 4%;
+
+    }
+    h1{
+      text-align: center;
+    }
+    div{
+      display: block;
+      text-align: center;
+      margin: 10px;
+    }
+    #id > h2{
+      text-align: left;
+    }
+    #login{ 
+      display: flex;
+      justify-content: center;
+      border: 1px solid black;
+      background: blue;
+    }
+    #login > a{
+      color: white;
+      text-decoration: none;
+    }
+    #login > a:hover{
+      background: lightblue;
+    }
+    #signin > a{
+      color: blue;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <container>
+  <h1>로그인</h1>
+
+  <div>
+  <h2 id="id">아이디</h2>
+    <input type="text" placeholder="아이디 입력">
+  </div>
+  <div>
+  <h2 id="pw">비밀번호</h2>
+    <input type="password" placeholder="비밀번호 입력">
+  </div>
+  <div id="login"><a href="#">로그인</a></div>
+  <div id="signin">아직 회원이 아니신가요?
+  <a href="#">회원가입</a>
+</div>
+
+  </container>
+</body>
+</html>
