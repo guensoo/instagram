@@ -5,23 +5,28 @@
 <!-- !누르고 팝업창이 닫히면 Ctrl + Space Bar -->
 
 <!DOCTYPE html> <!-- HTML5 문서임을 선언, 대소문자 구분 없이 정의해도 상관 없음 -->
-<html lang="EN"> <!-- 루트 태그 HTML에서 최상위 태그(root태그) 이다. -->
+<html lang="KR"> <!-- 루트 태그 HTML에서 최상위 태그(root태그) 이다. -->
   <head> <!-- 현재 HTML 웹 페이지의 정보(metedata)를 포함한다. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- width = 사용하는 기기의 너비만큼, 초기화면 크기 = 1.0(100%) -->
-    <title>제목입니다.</title> <!-- HTML 페이지의 제목, 브라우저 상단의 웹 페이지 탭에 제목으로 노출된다. -->
+    <title>instagram</title> <!-- HTML 페이지의 제목, 브라우저 상단의 웹 페이지 탭에 제목으로 노출된다. -->
+    <!-- realationship : 연결하려는 파일과의 관계 -->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body> <!-- HTML문서에서 실질적으로 보이는 영역을 정의하는 구간 (이미지, 글, 링크, 테이블, 동영상 등등) -->
     <!-- 코드 작성시 엔터를 눌러 줄바꿈을 시도했음에도 불구하고 실행화면에는 한줄로 연결된 채 나온다. => Block 속성이 없기 때문 -->
     <img src="image/instagram.png" width="150px">
-    <input type="text" value="검색"><br>
-    <div>
-      <img src="image/profile.jpg" width="50px">
-       
-      <div>
-        <h2>half_bottle</h2>
+    <input type="text" placeholder="검색"><br>
+    <div id="profile">
+      <div id="profile_pic">
+        <img src="image/profile.jpg" class="circle_pic">
+      </div>
+
+      <div id="profile_info">
+        <div id="id">half_bottle</div>
         <button>프로필 편집</button>
       </div>
+      
     </div>
     <div>
       <p>
@@ -34,34 +39,35 @@
         <a href="https://needleworm.github.io">needleworm.github.io</a>
       </p>
     </div>
-    <div>
-      <div>
-        <div>
-          <img src="image/hl1.jpg" width="35px">
+    <div id="highlight_area">
+      <div class="highlight">
+        <div class="highlight_pic">
+          <img src="image/hl1.jpg" class="circle_pic">
         </div>
         <div>
           😘
         </div>
       </div>
-      <div>
-        <div>
-          <img src="image/hl2.jpg" width="35px">
+      <div class="highlight">
+        <div class="highlight_pic">
+          <img src="image/hl2.jpg" class="circle_pic">
         </div>
         <div>
           😊
         </div>
       </div>
+      <div></div>
     </div>
-    <div>
-      <div>
+    <div id="stat_bar">
+      <div class="stat">
         게시물<br>
         133
       </div>
-      <div>
+      <div class="stat">
         팔로워<br>
         408
       </div>
-      <div>
+      <div class="stat">
         팔로우<br>
         189
       </div>
@@ -71,15 +77,21 @@
       <!-- 부모(div) 너비의 32%값이 지정이 된다. 
        퍼센트로 지정된 값은 화면 크기에 따라 유동적으로 바뀐다.
        창 크기의 변화에 맞춰 그때그때 화면의 정보나 크기가 함께 바뀌는 웹 페이지를 반응형 웹이라고 한다. -->
-      <img src="image/thumnail1.jpg" width="32%">
-      <img src="image/thumnail2.jpg" width="32%">
-      <img src="image/thumnail3.jpg" width="32%">
-      <img src="image/thumnail4.jpg" width="32%">
-      <img src="image/thumnail5.jpg" width="32%">
-      <img src="image/thumnail6.jpg" width="32%">
-      <img src="image/thumnail7.jpg" width="32%">
-      <img src="image/thumnail8.jpg" width="32%">
-      <img src="image/thumnail9.jpg" width="32%">
+      <div class="thumbnail_grid">
+        <img src="image/thumnail1.jpg" class="thumbnail">
+        <img src="image/thumnail2.jpg" class="thumbnail">
+        <img src="image/thumnail3.jpg" class="thumbnail">
+      </div>
+      <div class="thumbnail_grid">
+        <img src="image/thumnail4.jpg" class="thumbnail">
+        <img src="image/thumnail5.jpg" class="thumbnail">
+        <img src="image/thumnail6.jpg" class="thumbnail">
+      </div>
+      <div class="thumbnail_grid">
+        <img src="image/thumnail7.jpg" class="thumbnail">
+        <img src="image/thumnail8.jpg" class="thumbnail">
+        <img src="image/thumnail9.jpg" class="thumbnail">
+      </div>
     </div>
   </body>
 </html>
