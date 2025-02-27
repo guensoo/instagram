@@ -36,19 +36,22 @@
     div:nth-child(6){
       background: goldenrod;
     }
-
+    /* 좌우로 일정한 간격으로 늘어나거나 줄어든다. */
     .nowrap{
       flex-wrap: nowrap;
     }
+    /* 좌우 칸이 부족할 경우 아래로 정렬된다. */
     .wrap{
       flex-wrap: wrap;
     }
+    /* 좌우 칸이 부족할 경우 위로 정렬된다. */
     .wrap-reverse{
       flex-wrap: wrap-reverse;
     }
   </style>
 </head>
 <body>
+  <!-- 브라우저의 너비(width)에 따라 요소가 늘어나거나 감소하는 속성 -->
   <h1>noWrap</h1>
   <section class="nowrap">
     <div>01</div>
