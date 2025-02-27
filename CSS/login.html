@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,42 +8,55 @@
     body{
       display: flex;
       height: 100vh;
-      background: rgb(218, 216, 216);
+      background: rgb(236, 235, 235);
     }
     container{
-      border: 1px solid black;
+      border: 1px solid white;
       align-self: center;
       margin: 0 auto;
       display: block;
-      width: 40em;
-      height: 25em;
-      margin-top: 100px;
+      width: 35em;
+      height: 30em;
       background: white;
-      border-radius: 4%;
+      border-radius: 8px;
 
     }
     h1{
+      margin-top: 50px;
+      margin-bottom: auto;
       text-align: center;
+    }
+    h2{
+      width: 294px;
+      text-align: left;
+      margin-left: 130px;
     }
     div{
       display: block;
       text-align: center;
+      font-weight: bold;
       margin: 10px;
     }
-    #login{ 
-      display: flex;
-      justify-content: center;
+    input{
+      margin-left: 130px;
       border: 1px solid black;
+      width: 294px;
+      height: 30px;
+      border-radius: 6px;
+    }
+    button{
+      margin-top: 30px;
+      margin-left: 130px;
+      border-radius: 8px;
       background: blue;
-    }
-    #login > a{
       color: white;
-      text-decoration: none;
+      width: 300px;
+      height: 50px;
     }
-    #login > a:hover{
-      background: lightblue;
+    button:hover{
+      background: darkblue;
     }
-    #signin > a{
+    a{
       color: blue;
       text-decoration: none;
     }
@@ -51,21 +64,19 @@
 </head>
 <body>
   <container>
-  <h1>로그인</h1>
+    <h1>로그인</h1>
 
-  <div id="id">
-  <h2>아이디</h2>
-    <input type="text" placeholder="아이디 입력">
-  </div>
-  <div id="pw">
-  <h2>비밀번호</h2>
+    <h2>아이디</h2>
+      <input type="text" placeholder="아이디 입력">
+
+    <h2>비밀번호</h2>
     <input type="password" placeholder="비밀번호 입력">
-  </div>
-  <div id="login"><a href="#">로그인</a></div>
-  <div id="signin">아직 회원이 아니신가요?
-  <a href="#">회원가입</a>
-</div>
-
+    <br>
+    <button>로그인</button>
+    <div>
+      아직 회원이 아니신가요?
+      <a href="#">회원가입</a>
+    </div>
   </container>
 </body>
 </html>
