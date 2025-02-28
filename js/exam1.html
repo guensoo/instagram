@@ -13,10 +13,13 @@
 
     let basketBall = 30;
     let canBox = 4;
-    let Box = basketBall / canBox;
-    let result = Box % 2 == 0 ? Box : Math.ceil(Box);
+    let box = basketBall / canBox;
+    let result = box % 2 == 0 ? box : Math.ceil(box);
+    // let box1 = basketBall / box > box ? Math.ceil(box + 1) : Math.ceil(box);
+    // document.write("필요한 박스 갯수 : " + box1, "<br>");
 
     document.write("필요한 박스 갯수 : " + result, "<br>");
+
     document.write("<hr>");
 
     // 사각형의 면적과 둘레 계산하기
