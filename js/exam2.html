@@ -36,10 +36,10 @@
     let sym, plus = '+', min = '-', mul = '*', div = '/', rem = '%';
     sym = '-'
     switch(sym) {
-      case plus:
+      case plus, '+':
         console.log(`${su1} + ${su2} = ${su1 + su2}`);
         break;
-      case min:
+      case min: 
         console.log(`${su1} - ${su2} = ${su1 - su2}`);
         break;
       case mul:
@@ -52,9 +52,27 @@
         console.log(`${su1} % ${su2} = ${su1 % su2}`);
         break;
     }
+
+    // 1 ~ 10사이의 값을 변수에 담는다.
+    // 홀수인지 짝수인지 switch를 이용해서 판별
+
+    let num = 5;
+    let oddEven = 0;
+    oddEven = num % 2
+    switch(oddEven) {
+      case 1:
+        console.log(`입력한 숫자는 홀수입니다.`);
+        break;
+      case 0:
+        console.log(`입력한 숫자는 짝수입니다.`);
+        break;
+    }
   </script>
 </head>
 <body>
+  <h3>홀/짝 판별기</h3>
+  1~10의 숫자를 입력하세요<input>
+  <button>입력</button>
   
 </body>
 </html>
