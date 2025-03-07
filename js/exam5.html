@@ -8,6 +8,7 @@
     let dan = () => {
       let a = document.querySelector("#gugudan");
       let res = a.value;
+      let b = '';
 
       if(res == ""){
         alert("값을 입력해주세요");
@@ -18,9 +19,9 @@
         return;
       }
       for(let i = 1; i < 10; i++){
-        res = (`${res} X ${i} = ${res*i}<br>`);
+        b += (`${res} X ${i} = ${res*i}<br>`);
         let m_div = document.querySelector("#m_div");
-        m_div.innerHTML = res;
+        m_div.innerHTML = b;
       }
     }
     
