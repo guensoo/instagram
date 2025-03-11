@@ -48,6 +48,7 @@
     console.log(parseInt("1234.123"));
     console.log(parseInt("1234.010"));
     console.log(parseInt("1234.456"));
+    console.log(parseInt("OKR1, OKR2"));
 
     // 두번째 인자로 특정 진법을 전달하면, 해당 진법에 맞는 정수로 반환한다.
     console.log(parseInt("10", 10));
@@ -157,10 +158,23 @@
     // 문자열을 지정한 구분자로 나눠서 배열로 반환
     str = "apple,banana,cherry";
     console.log(str.split(','));
+    answer = '';
+    for(let s of str){
+      answer += s;
+    }
+    console.log(answer);
 
     // charAt()
     // 지정한 인덱스의 문자를 반환
     console.log(str.charAt(0));
+
+    let test = "테 스 트 중 입 니 다"
+    let m = test.split(' ')
+    answer = '';
+    for(let i of m){
+      answer += i;
+    }
+    console.log(answer);
   </script>
 </head>
 <body>
