@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       let _summary = summary.querySelector("input").value;
       let _profileDetail = profileDetail.querySelector("input").value;
 
-      userInfo.innerHTML = _userInfo;
+      userInfo.innerHTML = _userInfo+"<br>";
       summary.innerHTML = _summary;
 
       if(_profileDetail.startsWith("http")){
