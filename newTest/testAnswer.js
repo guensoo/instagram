@@ -219,15 +219,16 @@ document.addEventListener("DOMContentLoaded",function(){
             emailMessage.textContent = "이메일을 입력해 주세요";
             emailMessage.style.color="red";
         }
-        // 모두 통과 시
-        if(emailRegex.test(value)){
-            emailMessage.textContent = "올바른 이메일 입니다.";
-            emailMessage.style.color="green";
-        }
         // 이메일 형식이 다를 때
-        else{
+        if(!emailRegex.test(value)){
+            
             emailMessage.textContent = "이메일 형식이 올바르지 않습니다.";
             emailMessage.style.color="red";
+        }
+        // 모두 통과 시
+        else{
+            emailMessage.textContent = "올바른 이메일 입니다.";
+            emailMessage.style.color="green";
         }
     }
     // 입력중, 입력 후 이벤트 처리
@@ -235,5 +236,13 @@ document.addEventListener("DOMContentLoaded",function(){
     emailInput.addEventListener("input",validateEmail);
     // 입력후
     emailInput.addEventListener("blur",validateEmail);
+
+    this.forms.addEventListener("submit", function(event){
+        // confirm창을 띄운다.
+        let confirmed = confirm("가입을 완료하시겠습니까?");
+        if(!confirmed){
+            event.preventDefault(); // form의 내용의 전송을 막는다.
+        }
+    })
 
 })
